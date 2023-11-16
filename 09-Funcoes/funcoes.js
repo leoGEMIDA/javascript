@@ -36,30 +36,30 @@ document.write('<h2 style="color: blue;">Arrow Function (Moderna)</h2><br>');
 Função Seta/Flecha (Arrow Function) */
 
 
-let exemplo = () => 
+let exemplo3 = () => 
     document.write("Arrow Function <br>");
 
-exmeplo3();
+exemplo3();
 
 
 // _______________________ 3B
 
-
-// Funçãon para dobrar o valor
+// Função para dobrar o valor
 function dobra(valor) {
-    return valor (valor) {
-        return valor * 2;
-    }
+    return valor * 2;
 }
 
 document.write( dobra(10));
 document.write("<br>");
 
-// Funçãon para multiplicar o valor
-let dobraC = valor => valor *300;
+// Função para multiplicar o valor (Sintaxe Arrow Function)
 
-document.write( dobra(20));
+let dobraB = valor => valor * 300;
+document.write( dobraB(20) );
 document.write("<br>");
+
+
+
 
 // ________________________________________________________________________
 
@@ -102,18 +102,18 @@ let preco =1250;
 let desconto = 77.88;
 let precoFinal = preco - desconto;
 
-
-//Formatar o dolar $
+// Formatar para Dolar $
 function formataMoeda(valor) {
     return valor.toLocaleString ('en', {
         style:'currency', currency: 'USD'
     });
 }
-//Formatar para Real R$ (sintaxe de arrow function)
+
+// Formatar para Real R$ (Sintaxe de Arrow Function)
 let formataValor = valor => {
     return valor.toLocaleString ('pt-br', {
         style:'currency', currency: 'BRL'
-    });c 
+    });
 }
 
 
