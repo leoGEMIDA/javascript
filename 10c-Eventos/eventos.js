@@ -10,14 +10,18 @@ const sub01 = pagina.querySelector("#subtitulo-exemplo01");
 
 
 
-// 1ª Digitação (Aqui)
+sub01.addEventListener('mooseover', function() {
+    msg.textContent = 'Você passou o mouse sobre...';
+});
 
-
+// Função quando o mouse sai
+sub01.addEventListener('mouseover')
 
 // ____________________________________________________________________________
 // Resolução exemplo 2 (Modo noturno)
+botao.addEventListener('click,')
 
-
+const botao = pagina.querySelector("noturno");
 
 // 2ª Digitação (Aqui)
 
