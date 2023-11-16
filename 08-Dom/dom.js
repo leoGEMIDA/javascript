@@ -22,18 +22,34 @@ querySelectorAll() -> seleciona VÁRIOS elementos de acordo com um seletor */
 // ____________________________________________________________________________
 // Modificando elementos
 
+// Selecionando pelo ID
+const titulo = document.getElementById('titulo-principal');
 
-// 1ª Digitação (Aqui)
+// Selecionando pelo ID
+const pagina = document.querySelector('body');
+
+// Selecionando Todas as Tag's h2
+const subtitulo = document.querySelectorAll('h2');
+
+// Selecionando pela Tag
+const subtitulo = document.querySelector('figcaption');
 
 
 // ____________________________________________________________________________
 
 // Modificando elementos
 
+// H1
+titulo.textContent="Olá mundo";
 
-// 2ª Digitação (Aqui)
+// Cor de fundo (Body)
+pagina.style.backgroundColor = "green";
 
+//mudando o segundo h2
+subtitulo[1].textContent="Full-Stack";
 
+// Mudando a legenda(figcaption)
+legenda.innerHTML="<b>Veloz e furioso</b>";
 // ____________________________________________________________________________
 
 // CSS vis JS
@@ -66,14 +82,22 @@ const subtitulos = document.querySelectorAll('h2');
 // Modificar o texto do <h3> "Editores"
 
 
-// 3ª Digitação (Aqui)
-
+const tituloEditores=document.querySeletor('h3');
+tituloEditores.textContent = 'Melhores Editores';
+tituloEditores.style.color= 'corange';
+tituloEditores.style.fontSize = '28px';
 
 // Adicionar um novo editor à lista:
 
+const listaEditores = document.querySelector('#lista-editores');
 
-// 4ª Digitação (Aqui)
+const novoEditor = document.createElement('li')
+novoEditor.textContent= 'subline';
+listaEditores.appendChild(novoEditor);
 
+//Alteramdo a cor do 3º item da lista 
+const terceiroItem = listaEditores.querySelectorAll('li')[2];
+terceiroItem. style.color = 'orange';
 
 
 
